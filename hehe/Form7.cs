@@ -67,5 +67,16 @@ namespace hehe
             }
             label1.Text = "เรียงลำดับจากน้อยไปมาก\n" + result;
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            clearform();
+        }
+
+        private void clearform()
+        {
+            textBox1.Text = "";
+            label1.Text = "";
+        }
     }
 }

@@ -109,6 +109,7 @@
             Controls.Add(button1);
             Name = "Form4";
             Text = "Form4";
+            FormClosing += Form4_FormClosing;
             Load += Form4_Load;
             ResumeLayout(false);
         }

@@ -58,12 +58,14 @@
             // 
             // button1
             // 
-            button1.Location = new Point(330, 229);
+            button1.BackColor = Color.Chocolate;
+            button1.FlatStyle = FlatStyle.Flat;
+            button1.Location = new Point(323, 229);
             button1.Name = "button1";
             button1.Size = new Size(147, 64);
             button1.TabIndex = 3;
-            button1.Text = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.Text = "เริ่ม";
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // txt_in_int
@@ -111,6 +113,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.BurlyWood;
             ClientSize = new Size(838, 536);
             Controls.Add(label4);
             Controls.Add(txt_in_str);

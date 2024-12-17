@@ -29,7 +29,7 @@ namespace hehe
                 // รับค่าระยะทางและเวลา
                 double distance = double.Parse(txtdistance.Text); // ระยะทาง (เมตร)
                 double time = double.Parse(txttime.Text);         // เวลา (วินาที)
-                double minutes = time * 60; 
+                double minutes = time * 60;
 
                 // ตรวจสอบไม่ให้เวลาเป็น 0 หรือติดลบ
                 if (time <= 0)
@@ -39,7 +39,7 @@ namespace hehe
                 }
 
                 // สูตรคำนวณความเร็ว: v = s / t
-               // double speed = distance / time;
+                // double speed = distance / time;
                 double speed = kk(distance, time);
 
                 // แสดงผลลัพธ์ใน Label
@@ -54,6 +54,17 @@ namespace hehe
         {
             return speed / s;
         }
-          
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            clearform();
+        }
+
+        private void clearform()
+        {
+            txtdistance.Text = "";
+            txttime.Text = "";
+            lblResult.Text = "";
+        }
     }
 }

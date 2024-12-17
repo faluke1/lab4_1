@@ -19,8 +19,10 @@ namespace hehe
 
         private void Form4_Load(object sender, EventArgs e)
         {
-
+            MessageBox.Show("สวัสดี!", "!!!Welcome Text!!!",
+            MessageBoxButtons.OK, MessageBoxIcon.Warning);
         }
+
 
         private void button1_Click(object sender, EventArgs e)
         {
@@ -56,6 +58,15 @@ namespace hehe
         {
             Form6 f = new Form6();
             f.ShowDialog();
+        }
+
+        private void Form4_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (MessageBox.Show("แน่ใจว่าจะปิด?", "The Program",
+                MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
+                e.Cancel = true;
+            }
         }
     }
 }

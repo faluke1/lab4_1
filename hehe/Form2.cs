@@ -36,18 +36,31 @@ namespace hehe
                 return;
             }
 
-           
+
 
             // คำนวณเงินเดือนรวม
             //totalSalary = baseSalary + (overtimeHours * overtimeRate);
             totalSalary = faluke(baseSalary, overtimeHours, overtimeRate);
 
-           // แสดงผลลัพธ์
-           lblResult.Text = $"เงินเดือนรวม: {totalSalary:C}";
+            // แสดงผลลัพธ์
+            lblResult.Text = $"เงินเดือนรวม: {totalSalary:C}";
         }
         double faluke(double oop, double str, double fa)
         {
             return oop + (str * fa);
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            clear();
+        }
+
+        private void clear()
+        {
+            txtBaseSalary.Text = "";
+            txtOvertimeHours.Text = "";
+            txtOvertimeRate.Text = "";
+            lblResult.Text = "";
         }
     }
 }  

@@ -36,6 +36,7 @@
             label3 = new Label();
             lblResult = new Label();
             button1 = new Button();
+            button2 = new Button();
             SuspendLayout();
             // 
             // txtBaseSalary
@@ -108,11 +109,23 @@
             button1.UseVisualStyleBackColor = true;
             button1.Click += button1_Click;
             // 
+            // button2
+            // 
+            button2.Location = new Point(324, 307);
+            button2.Name = "button2";
+            button2.Size = new Size(112, 58);
+            button2.TabIndex = 27;
+            button2.Text = "ล้างค่า";
+            button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
+            // 
             // Form2
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = SystemColors.ControlDark;
             ClientSize = new Size(902, 588);
+            Controls.Add(button2);
             Controls.Add(button1);
             Controls.Add(lblResult);
             Controls.Add(label3);
@@ -138,5 +151,6 @@
         private Label label3;
         private Label lblResult;
         private Button button1;
+        private Button button2;
     }
 }

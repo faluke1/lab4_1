@@ -66,5 +66,16 @@ namespace hehe
             int[] data_2 = textBox1.Lines.Select(line => int.TryParse(line, out var result) ? result : 0).ToArray();
             tet2(data_2);
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            clearForm();
+        }
+
+        private void clearForm()
+        {
+            textBox1.Text = "";
+            label1.Text = "";
+        }
     }
 }

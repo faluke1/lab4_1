@@ -36,6 +36,7 @@
             lblTime = new Label();
             label1 = new Label();
             lblResult = new Label();
+            button1 = new Button();
             groupBox1.SuspendLayout();
             SuspendLayout();
             // 
@@ -116,11 +117,22 @@
             lblResult.Text = "0.00";
             lblResult.TextAlign = ContentAlignment.MiddleCenter;
             // 
+            // button1
+            // 
+            button1.Location = new Point(549, 361);
+            button1.Name = "button1";
+            button1.Size = new Size(218, 78);
+            button1.TabIndex = 21;
+            button1.Text = "ล้างค่า";
+            button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
+            // 
             // Form3
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(891, 599);
+            Controls.Add(button1);
             Controls.Add(lblResult);
             Controls.Add(label1);
             Controls.Add(groupBox1);
@@ -143,5 +155,6 @@
         private Label lblResult;
         private TextBox txttime;
         private TextBox txtdistance;
+        private Button button1;
     }
 }

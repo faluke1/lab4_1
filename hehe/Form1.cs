@@ -57,7 +57,15 @@
 
         private void button1_Click(object sender, EventArgs e)
         {
-            //clearForm();
+            clearForm();
+        }
+
+        private void clearForm()
+        {
+            txtFullname.Text = "";
+            txtTitle.Text = "";
+            txtFirstName.Text = "";
+            txtLastName.Text = "";
         }
 
 
